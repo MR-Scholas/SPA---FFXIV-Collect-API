@@ -22,16 +22,14 @@ export default function CategoryList (props) {
     useEffect(()=>{ getSubject() },[category])
 
     const loaded=()=>
-    {
-        // if (!subject || !subject.results) {
-        //     return <div>No items found</div>;
-        // }
-        
+    {   
         const items=subject.results
+        if (!items) return loading()
         return(
             <div>
                 {items.map((subj)=>
                     {
+                        if(subj.patch>=6.0) return(null);
                         return(
                             <InfoCard
                                 key={subj.id}
