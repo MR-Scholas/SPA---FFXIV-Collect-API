@@ -6,7 +6,7 @@ export default function InfoCard (props)
         <div className="infoCard">
             <div className="cardHeader">
                 <h2>{props.name}</h2>
-                <img src={props.icon}/>
+                <img className ="icon" src={props.icon}/>
             </div>
             <div>Added: {props.patch}</div>
             <div>Owned: {props.owned}</div>

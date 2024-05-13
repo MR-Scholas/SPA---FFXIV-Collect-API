@@ -4,7 +4,7 @@ export default function Nav (props)
 {
     return(
         <div className="nav">
-            <Link to="/armoire">
+            <Link to="/armoires">
                 <div>Armoire</div>
             </Link>
             <Link to="/emotes">
