@@ -4,7 +4,6 @@ import Armoire from './pages/armoire.jsx'
 import Emotes from './pages/emotes.jsx'
 import Hairstyles from './pages/hairstyles.jsx'
 import Nav from './components/nav.jsx'
-import InfoCard from './components/infocard.jsx'
 import './App.css'
 
 function App() {
