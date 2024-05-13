@@ -26,7 +26,7 @@ export default function CategoryList (props) {
         const items=subject.results
         if (!items) return loading()
         return(
-            <div>
+            <div className="cardContainer">
                 {items.map((subj)=>
                     {
                         if(subj.patch>=6.0) return(null);
